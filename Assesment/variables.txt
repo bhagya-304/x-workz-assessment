@@ -1,0 +1,82 @@
+Explain Types Of variables with example
+
+A variable is a container which holds the value while the Java program is executed. 
+Types Of Variables:
+1.Local Variables
+2.Instance Variables
+3.Static Variables
+
+1.Local Variables:That declare within the body of the method
+Example:public class StudentDetails { 
+    public void StudentAge() 
+    { 
+        // local variable age 
+        int age = 0; 
+        age = age + 5; 
+        System.out.println("Student age is : " + age); 
+    } 
+  
+    public static void main(String args[]) 
+    { 
+        StudentDetails obj = new StudentDetails(); 
+        obj.StudentAge(); 
+    } 
+} 
+2.Instance Variables: Instance variables are non-static variables and are declared in a class outside any method, constructor or block.
+Example:
+ public class Marks { 
+    // These variables are instance variables. 
+    // These variables are in a class 
+    // and are not inside any function 
+    int engMarks; 
+    int mathsMarks; 
+    int phyMarks; 
+} 
+  
+class MarksDemo { 
+    public static void main(String args[]) 
+    { 
+        // first object 
+        Marks obj1 = new Marks(); 
+        obj1.engMarks = 50; 
+        obj1.mathsMarks = 80; 
+        obj1.phyMarks = 90; 
+  
+        // second object 
+        Marks obj2 = new Marks(); 
+        obj2.engMarks = 80; 
+        obj2.mathsMarks = 60; 
+        obj2.phyMarks = 85; 
+  
+        // displaying marks for first object 
+        System.out.println("Marks for first object:"); 
+        System.out.println(obj1.engMarks); 
+        System.out.println(obj1.mathsMarks); 
+        System.out.println(obj1.phyMarks); 
+  
+        // displaying marks for second object 
+        System.out.println("Marks for second object:"); 
+        System.out.println(obj2.engMarks); 
+        System.out.println(obj2.mathsMarks); 
+        System.out.println(obj2.phyMarks); 
+    } 
+} 
+3.Static variables : Static variables are also known as Class variables.
+Example:
+public class Emp { 
+  
+    // static variable salary 
+    public static double salary; 
+    public static String name = "Harsh"; 
+} 
+  
+public class EmpDemo { 
+    public static void main(String args[]) 
+    { 
+  
+        // accessing static variable without object 
+        Emp.salary = 1000; 
+        System.out.println(Emp.name + "'s average salary:"
+                           + Emp.salary); 
+    } 
+} 

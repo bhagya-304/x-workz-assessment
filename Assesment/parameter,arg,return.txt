@@ -1,0 +1,55 @@
+Explain method,parameter,argument,and return type with example
+
+Method: A method is a group of Java statements that perform some operation on some data, and may or may not return a result.
+Example:public class MyClass {
+  static void myMethod() {
+    // code to be executed
+  }
+}
+
+Parameter:Parameters act as variables inside the method. 
+Parameters are specified after the method name, inside the parentheses. 
+Example:
+public class MyClass {
+  static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+
+Arguments:An argument is a value passed to a function when the function is called.
+Example:public class Example { 
+  
+    public static int multiply(int a, int b) 
+    { 
+        return a + b; 
+    } 
+  
+    public static void main(String[] args) 
+    { 
+        int x = 2; 
+        int y = 5; 
+  
+        // the variables x and y are arguments 
+        int sum = multiply(x, y); 
+  
+        System.out.println("SUM IS: " + sum); 
+    } 
+} 
+
+
+Return Type:A return type may be a primitive type like int, float, double, a reference type or void type(returns nothing). 
+Example:public class MyClass {
+  static int myMethod(int x) {
+    return 5 + x;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(myMethod(3));
+  }
+}
